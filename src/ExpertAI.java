@@ -1,9 +1,10 @@
 public class ExpertAI {
 
     public void makeMove(){
+        int amountToRemove;
         int pileSize = playGame.board.pileSize;
         int maxRemovable = playGame.board.maxRemovable();
-        int amountToRemove;
+
         
         if (pileSize == 2) {
             amountToRemove = 1; 
