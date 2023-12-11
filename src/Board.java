@@ -1,18 +1,12 @@
 public class Board {
-    public static int pileSize;
+    public int pileSize;
     
-    private void createSticks(){
+    public Board(){
         pileSize = 20 + (int)(Math.random() * 31);
     }
 
-    private void removeSticks(int number){
-        pileSize -= number;
-    }
-
-    public static void main(String[] args){
-        Board board = new Board();
-        board.createSticks();
-        System.out.println(pileSize);
+    public int maxRemovable(){
+        return ((int) Math.ceil(pileSize / 2.0));
     }
 
 }
