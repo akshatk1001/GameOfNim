@@ -1,5 +1,5 @@
 public class Board {
-    public int pileSize;
+    private int pileSize;
     
     public Board(){
         pileSize = 20 + (int)(Math.random() * 31);
