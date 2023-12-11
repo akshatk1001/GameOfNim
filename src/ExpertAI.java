@@ -8,7 +8,7 @@ public class ExpertAI {
         amountToRemove = optimalRemaining == 0 ? maxRemovable : optimalRemaining - 1;
 
         if (amountToRemove <= 0 || amountToRemove > maxRemovable) {
-            amountToRemove = 1;  // Default to removing one if the calculation doesn't give a valid number
+            amountToRemove = 1; 
         }
         
         System.out.println(" ");
