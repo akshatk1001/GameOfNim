@@ -28,7 +28,26 @@ public class playGame {
                 }
             }        
         }
+        else{
+            Player player1 = new Player("Player 1");
+            ExpertAI expertAI = new ExpertAI();
+            player1.getName();
+            while (board.pileSize != 1) {
+                player1.getPlayerMove();
+                if (board.pileSize == 1){
+                    System.out.println(" ");
+                    System.out.println(player1.name + " WINS!!!!");
+                    break;
+                }
+                expertAI.makeMove();
+                if (board.pileSize == 1){
+                    System.out.println(" ");
+                    System.out.println("THE EXPERTAI WINS!!!!");
+                    break;
+                }
+        }
     }
     }
+}
 
 
